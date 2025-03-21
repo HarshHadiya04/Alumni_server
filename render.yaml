@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-nodejs-server
+    env: node
+    build:
+      dockerfile: Dockerfile
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: MONGODB_URI
+        value: mongodb+srv://SGP:HVDVBBdNYpC8kDrX@studentalumni.aiy4n.mongodb.net/StudentAlumni
+    plan: free
